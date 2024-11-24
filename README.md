@@ -1,7 +1,7 @@
 In this project there are three APIs : 
 
 1.  method - get
-    path - "/check"
+    path - "/"
     description : This Api will simply return a message "its working" with status code 200 just to confirm if our backend is live and working or not.
 
 2.  method - get
