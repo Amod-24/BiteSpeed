@@ -3,8 +3,18 @@ const prisma = new PrismaClient();
 
 const identify = async (req,res)=>{
     let {email,phoneNumber} = req.body;
-    if(!phoneNumber) phoneNumber = null;
-    if(!email) email = null;
+    if(!phoneNumber){
+        phoneNumber = null
+    }
+    else{
+        phoneNumber = String(phoneNumber);
+    }
+    if(!email){
+        email = null
+    }
+    else{
+        email = String(email);
+    }
 
     if(!email && !phoneNumber){
         return res.status(404).json({
