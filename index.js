@@ -9,7 +9,7 @@ const port = 3300;
 const identify = require("./controllers/identify");
 const getAllContacts = require("./controllers/getAllContacts");
 
-app.get("/check", (req,res)=>{
+app.get("/", (req,res)=>{
     res.status(200).json({
         message : "its working"
     })
